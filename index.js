@@ -70,7 +70,10 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    if ()
+    if (checkCollision(rock)){
+      return endGame()
+    }
+    
     // implement me!
     // (use the comments below to guide you!)
     /**
