@@ -138,7 +138,13 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   // implement me!
-  
+   window.requestAnimationFrame(function() {
+    const left = positionToInteger(DODGER.style.left)
+    if (left>0) {
+      DODGER.style.left = `${left - 6}px`
+    }
+  });
+} 
   
     window.requestAnimationFrame(function() {
      const left = positionToInteger(DODGER.style.left)
