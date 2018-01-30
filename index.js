@@ -138,6 +138,8 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   // implement me!
+  
+  
     window.requestAnimationFrame(function() {
      const left = positionToInteger(DODGER.style.left)
      if (left<360) {
