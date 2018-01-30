@@ -116,12 +116,13 @@ function endGame() {
   ROCKS.forEach(function(rock)
       {rock.remove()
       });
-  document.removeEventListener('keydown',moveDodger, true);
+  document.removeEventListener('keydown', moveDodger, true);
   return alert('YOU LOSE!');
 }
 
 function moveDodger(e) {
   // implement me!
+  if (e.w)
   /**
    * This function should call `moveDodgerLeft()`
    * if the left arrow is pressed and `moveDodgerRight()`
