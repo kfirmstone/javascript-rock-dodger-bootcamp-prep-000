@@ -122,7 +122,11 @@ function endGame() {
 
 function moveDodger(e) {
   // implement me!
-  if (e.w)
+   if (e.which === LEFT_ARROW){
+    moveDodgerLeft()
+  }if (e.which === RIGHT_ARROW){
+    moveDodgerRight()
+  }
   /**
    * This function should call `moveDodgerLeft()`
    * if the left arrow is pressed and `moveDodgerRight()`
@@ -134,6 +138,7 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   // implement me!
+  
   /**
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
