@@ -70,6 +70,7 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
+    if ()
     // implement me!
     // (use the comments below to guide you!)
     /**
