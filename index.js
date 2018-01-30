@@ -87,7 +87,7 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
   else{
-    rock.remove
+    rock.remove()
   }
     /**
      * But if the rock *has* reached the bottom of the GAME,
